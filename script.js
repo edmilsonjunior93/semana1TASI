@@ -3,7 +3,7 @@ const inputNome = document.getElementById('primeiro')
 const inputSobrenome = document.getElementById('sobrenome')
 
 const botaoEnviar = document.querySelector('button')
-botaoEnviar.addEventListener('click', function() {
+botaoEnviar.addEventListener('click', () => {
     const nome = inputNome.value
     
     const sobrenome = inputSobrenome.value
@@ -30,6 +30,6 @@ function naoAtulaizar(e) {
 }
 
 const tabela = document.querySelector('tbody')
-tabela.addEventListener('dblclick',function(e) {
+tabela.addEventListener('dblclick',e => {
     e.target.parentNode.remove()    
 })
